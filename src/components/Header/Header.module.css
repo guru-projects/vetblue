@@ -1,0 +1,104 @@
+.head{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--blue);
+    border-radius: 20px;
+    width: 80%;
+    height: 80px;
+    padding: 0 20px;
+    justify-content: space-between;
+
+    img{
+        height: 70px;
+        width: 200px;
+    }
+}
+
+.list{
+    width: 500px;
+    height: 80px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        align-self: center;
+        background-color: var(--blue);
+        padding: 8px 16px;
+        border-radius: 10px;
+    }
+}
+
+.hamburger{
+    display: none;
+  }
+  
+@media screen and (max-width: 780px){
+      
+    /* hamburger */
+    .hamburger {
+        padding-top: 25px;
+      display: block;
+      cursor: pointer;
+    }
+  
+    .bar {
+          border-radius: 10px;
+          background-color: #120f0b;
+          width: 20px;
+          height: 3px;
+          display: block;
+          margin: 5px;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+      }
+
+  
+    /* adding active class to the bars  */
+    /* .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    } */
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(4px) rotate(45deg);
+      width: 20px;
+    }
+    .hamburger.active .bar:nth-child(2){
+      transform: translateY(-4px) rotate(-45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-12px) rotate(45deg);
+    }
+    .lostmob{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .list{
+        z-index: 1;
+        position: absolute;
+        flex-direction: column;
+        gap: 0;
+        top: 110px;
+        left: -110%;
+        background-color: #dab74d;
+        border-radius: 20px;
+        width: 92%;
+        margin: 0 4%;
+        height: auto;
+        transition: 0.7s ease-in-out;
+      }
+    
+      .list.active{
+        left: 0;
+      }
+    
+      .list li {
+        margin: 16px 0;
+      }
+}

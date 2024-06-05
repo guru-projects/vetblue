@@ -15,16 +15,16 @@ const Header = () => {
 
   return (
     <div className={HeaderCss.head}>
-      <nav className={HeaderCss.navbar}>
+      <nav className={HeaderCss.navbar} >
         <img src={logo} alt="logo" />
         <div className={HeaderCss.listmob}>
-            <div className={`${HeaderCss.list} ${isActive ? HeaderCss.active : ""}`}
+            <ul className={`${HeaderCss.list} ${isActive ? HeaderCss.active : ""}`}
               onClick={removeActive}>
-              <p onClick={removeActive}>Home</p>
-              <p onClick={removeActive}>Produucts</p>
-              <p onClick={removeActive}>Career</p>
-              <p onClick={removeActive}>Contact</p>
-            </div>
+              <li onClick={removeActive}>Home</li>
+              <li onClick={removeActive}>Products</li>
+              <li onClick={removeActive}>Career</li>
+              <li onClick={removeActive}>Contact</li>
+            </ul>
         </div>
         <div
           className={`${HeaderCss.hamburger} ${

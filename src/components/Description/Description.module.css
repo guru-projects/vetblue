@@ -1,0 +1,68 @@
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.card{
+    font-family: "Abril Fatface", serif;
+    font-style: normal;
+    margin: -50px 10px 40px 10px;
+    z-index: 1;
+    max-width: 300px;
+    padding: 20px;
+    height: auto;
+    /* border: 1px solid #9d9d9d; */
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    img{
+        width: 25px;
+    }
+    .head{
+        font-size: 1.5em;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .para{
+        margin: 0;
+        margin-top: 10px;
+        color: #797979;
+        font-size: 1em;
+    }
+    .button{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        background-color: #fff;
+        font-weight: bold;
+
+    }
+    .button img{
+        width: 20px;
+    }
+    
+}
+.arrow{
+    transition: transform 300ms linear;
+}
+.button:hover .arrow{
+    transform: translatex(10px);
+}
+@keyframes appear {
+    from{
+        /* opacity: 0; */
+        scale: 0.7;
+    } to {
+        /* opacity: 1; */
+        scale: 1;
+    }
+}
+.animate{
+    animation: appear linear; 
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}

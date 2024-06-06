@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Hero from './components/HeroSection/Hero';
 import Footer from './components/Footer/footer';
 import Description from './components/Description/Description';
-
+import AboutAndCompany from './components/AboutAndCompany/AboutCompany';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Header/>
         <Hero/>
         <Description/>
+        <AboutAndCompany/>
         <Footer/>
       </BrowserRouter>
     </div>

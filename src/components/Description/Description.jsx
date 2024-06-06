@@ -32,7 +32,7 @@ const Description = () => {
         </div>
         <div className={Styles.card}>
           <img src={message} alt="" />
-          <p className={Styles.head}>Vision</p>
+          <p className={Styles.head}>Brand Message</p>
           <p className={Styles.para}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
             totam ipsam fugiat, aspernatur ut reiciendis.

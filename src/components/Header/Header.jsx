@@ -1,6 +1,7 @@
 import HeaderCss from "./Header.module.css";
 import logo from "../../assets/logo.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -9,21 +10,23 @@ const Header = () => {
     setIsActive(!isActive);
   };
 
-  const removeActive = () => {
+  const removeActive = (path) => {
     setIsActive(false);
-  };
+      navigate(path)
+  }
+  
+  const navigate = useNavigate();
 
   return (
     <div className={HeaderCss.head}>
       <nav className={HeaderCss.navbar} >
         <img src={logo} alt="logo" />
         <div className={HeaderCss.listmob}>
-            <ul className={`${HeaderCss.list} ${isActive ? HeaderCss.active : ""}`}
-              onClick={removeActive}>
-              <li onClick={removeActive}>Home</li>
-              <li onClick={removeActive}>Products</li>
-              <li onClick={removeActive}>Career</li>
-              <li onClick={removeActive}>Contact</li>
+            <ul className={`${HeaderCss.list} ${isActive ? HeaderCss.active : ""}`}>
+            <li onClick={() => removeActive('/')}>Home</li>
+            <li onClick={() => removeActive('/products')}>Products</li>
+            <li onClick={() => removeActive('/career')}>Career</li>
+            <li onClick={() => removeActive('/contact')}>Contact</li>
             </ul>
         </div>
         <div

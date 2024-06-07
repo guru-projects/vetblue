@@ -1,0 +1,35 @@
+.gallery{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.textContent{
+    text-align: center;
+    margin-bottom: 50px;
+
+    .head{
+        font-size: 2.5rem;
+    }
+}
+.galleryContent{
+    animation: scroll 9s linear infinite;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 15rem;
+    justify-items: stretch;
+    /* gap: 20px; */
+
+    img{
+        margin: 10px;
+        /* border: 1px solid #717171; */
+        border-radius: 20px;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    }
+}
+.galleryContent:hover{
+    animation-play-state: paused;
+}
+@keyframes scroll {
+    to{
+        translate: calc(-4 * 15rem);
+    }
+}

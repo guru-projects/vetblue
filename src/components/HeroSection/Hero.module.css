@@ -1,8 +1,8 @@
 .hero{
     width: 100vw;
     height: 100vh;
-    background-image: url(../../assets/bg2.jpg);
-    filter: grayscale(60%);
+    background-image: url(../../assets/bg3.jpeg);
+    /* filter: grayscale(60%); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,13 +11,17 @@
     font-style: normal;
     /* color: var(--blue); */
 }
+
 .heroContant{
-    padding-left: 10%;
-    padding-top: 140px;
+    /* padding-left: 10%; */
+    position: absolute;
+    right: 17%;
+    padding-top: 200px;
 
     .slogan{
         margin: 0;
         margin-bottom: 20px;
+        text-align: center;
     }
     .heading{
         font-size: clamp(2rem, 4vw, 5rem);
@@ -30,5 +34,11 @@
         margin: 0;
         max-width: 350px;
     }
+}
+.b{
+    color: var(--blue);
+}
+.large{
+    font-size: clamp(3rem, 5vw, 7rem);
 }
 

@@ -1,0 +1,88 @@
+.careerSection{
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+
+    .careerSlogan{
+        color: var(--blue);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        z-index: 2;
+    }
+    .careerHead{
+        color: #040222;
+        font-size: clamp(2.5rem, 5vw, 5rem);
+        margin: 0;
+    }
+    .careerContent{
+        font-family: "Poppins", sans-serif;
+        color: #434159;
+        font-size: 18px;
+        z-index: 2;
+    }
+    }
+button{
+    padding: 16px 28px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background: rgb(75,156,211);
+    background: linear-gradient(90deg, rgba(75,156,211,1) 0%, rgba(0,230,255,1) 100%);
+    transition: all 1s linear;
+}
+button:hover{
+    background: rgb(75,156,211);
+    background: linear-gradient(180deg, rgba(75,156,211,1) 0%, rgba(0,230,255,1) 100%);
+}
+.profiles img{
+    z-index: -1 !important;
+}
+@media (width < 850px) {
+    .profiles {
+        display: none;
+    }
+}
+.careerSection .img1{
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    left: 200px;
+}
+.img2{
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 280px;
+    left: 120px;
+}
+.img3{
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 430px;
+    left: 200px;
+}
+.img4{
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    right: 200px;
+}
+.img5{
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 280px;
+    right: 120px;
+}
+.img6{
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 430px;
+    right: 200px;
+}

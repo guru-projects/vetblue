@@ -6,7 +6,9 @@ import Footer from './components/Footer/footer';
 import Description from './components/Description/Description';
 import AboutAndCompany from './components/AboutAndCompany/AboutCompany';
 import Gallery from './components/gallery/Gallery';
-import Products from './components/Products/Products';
+import Products from './components/Products2/Products';
+import Contact from './components/Contact/Contact';
+import Career from './components/Career/Career';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<><Hero/><Description/><AboutAndCompany/><Gallery/></>} />
           <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/career" element={<Career />} />
         </Routes>
         <Footer/>
       </BrowserRouter>

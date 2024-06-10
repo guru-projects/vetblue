@@ -12,8 +12,8 @@ const Description = () => {
           <img src={vision} alt="" />
           <p className={Styles.head}>Vision</p>
           <p className={Styles.para}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            totam ipsam fugiat, aspernatur ut reiciendis.
+            We vetblue animal care private Ltd., has a vision to achieve
+            complete customer satisfaction.
           </p>
           <button className={Styles.button}>
             Read More <img className={Styles.arrow} src={arrow} alt="" />
@@ -23,8 +23,8 @@ const Description = () => {
           <img src={mission} alt="" />
           <p className={Styles.head}>Mission</p>
           <p className={Styles.para}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            totam ipsam fugiat, aspernatur ut reiciendis.
+            Our objective is a commitment to the highest quality poultry
+            medicines and feed supplements for a healthy poultry.
           </p>
           <button className={Styles.button}>
             Read More <img className={Styles.arrow} src={arrow} alt="" />

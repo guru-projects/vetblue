@@ -69,3 +69,34 @@
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
 }
+.description{
+    padding: 120px 10% 10px 10%;
+}
+.ourPurpose{
+    background-color: #88c1e7;
+    height: 80px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.hint{
+    margin-left: -10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 3px 12px;
+    width: fit-content;
+    border-radius: 20px;
+    border: 1px solid #d8d8d8;
+    background-color: #d5ebfa;
+}
+.heading{
+    font-size: 2rem;
+    margin: 0;
+}
+.content{
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 50px;
+}

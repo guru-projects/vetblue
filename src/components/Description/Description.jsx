@@ -3,8 +3,15 @@ import vision from "../../assets/vission.png";
 import mission from "../../assets/mission.png";
 import message from "../../assets/message.png";
 import arrow from "../../assets/arrow.png";
+import { useNavigate } from "react-router-dom";
 
 const Description = () => {
+  const navigate = useNavigate();
+  const navigateTo = (path) => {
+      navigate(path);
+      window.scrollTo(0, 0);
+  }
+
   return (
     <div className={Styles.animate}>
       <div className={Styles.cardContainer}>
@@ -15,7 +22,7 @@ const Description = () => {
             We vetblue animal care private Ltd., has a vision to achieve
             complete customer satisfaction.
           </p>
-          <button className={Styles.button}>
+          <button className={Styles.button} onClick={() => navigateTo('/visionmission')}>
             Read More <img className={Styles.arrow} src={arrow} alt="" />
           </button>
         </div>
@@ -26,7 +33,7 @@ const Description = () => {
             Our objective is a commitment to the highest quality poultry
             medicines and feed supplements for a healthy poultry.
           </p>
-          <button className={Styles.button}>
+          <button className={Styles.button} onClick={() => navigateTo('/visionmission')}>
             Read More <img className={Styles.arrow} src={arrow} alt="" />
           </button>
         </div>
@@ -37,7 +44,7 @@ const Description = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
             totam ipsam fugiat, aspernatur ut reiciendis.
           </p>
-          <button className={Styles.button}>
+          <button className={Styles.button} onClick={() => navigateTo('/visionmission')}>
             Read More <img className={Styles.arrow} src={arrow} alt="" />
           </button>
         </div>

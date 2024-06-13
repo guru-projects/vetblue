@@ -2,8 +2,16 @@ import Styles from './Styles.module.css';
 import arrow from "../../assets/right-arrow.png";
 import chicken from '../../assets/chicken.png';
 import egg from '../../assets/Egg-York 1.png';
+import { useNavigate } from 'react-router-dom';
 
 const AboutCompany = () => {
+
+  const navigate = useNavigate();
+  const navigateTo = (path) => {
+      navigate(path);
+      window.scrollTo(0, 0);
+  }
+
   return (
     <div className={Styles.cardContainer}>
         <div className={Styles.card}>
@@ -16,7 +24,7 @@ const AboutCompany = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
                 totam ipsam fugiat, aspernatur ut reiciendis.
               </p>
-              <button className={Styles.button}>
+              <button className={Styles.button} onClick={() => navigateTo('/about')}>
                 Read More 
               </button>
           </div>
@@ -28,7 +36,7 @@ const AboutCompany = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
                 totam ipsam fugiat, aspernatur ut reiciendis.
               </p>
-              <button className={Styles.button}>
+              <button className={Styles.button} onClick={() => navigateTo('/about')}>
                 Read More
               </button>
           </div>

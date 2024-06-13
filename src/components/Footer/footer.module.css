@@ -24,13 +24,16 @@
     height: 250px;
 
     img{
-        margin-top: 40px;
-        max-width: auto;
+        margin-top: 20px;
+        object-fit: cover;
+        width: 300px;
+        height: 100px;
     }
 
     p{
+        margin-top: 40px;
         margin-left: 20px;
-        margin-bottom: auto;
+        /* margin-bottom: auto; */
         /* align-content: center; */
     }
 }

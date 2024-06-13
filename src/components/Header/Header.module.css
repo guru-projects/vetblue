@@ -9,6 +9,7 @@
 }
 
 .navbar{
+    /* overflow: auto; */
     display: flex;
     justify-content: center;
     /* border: 1px solid #838383; */
@@ -21,7 +22,7 @@
     background-color: #ffffff;
   
     img{
-        height: 70px;
+      object-fit: cover;
         width: 200px;
     }
 }
@@ -35,15 +36,12 @@
 
     li {
         align-self: center;
-        /* background-color: var(--blue); */
         color: var(--blue);
-        border: 1px solid var(--blue);
         padding: 8px 16px;
         border-radius: 10px;
     }
     li:hover{
-        background-color: var(--blue);
-        color: #fff;
+        background-color: #E3F4FF;
     }
 }
 

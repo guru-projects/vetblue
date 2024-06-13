@@ -9,6 +9,8 @@ import Gallery from './components/gallery/Gallery';
 import Products from './components/Products2/Products';
 import Contact from './components/Contact/Contact';
 import Career from './components/Career/Career';
+import About from './components/AboutAndCompany/About';
+import VisionMission from './components/Description/VisionMission';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/career" element={<Career />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/visionmission" element={<VisionMission />} />
         </Routes>
         <Footer/>
       </BrowserRouter>

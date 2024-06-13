@@ -1,7 +1,7 @@
 .hero{
     width: 100vw;
     height: 100vh;
-    background-image: url(../../assets/bg3.jpeg);
+    background-image: url(../../assets/bg-image.jpg);
     /* filter: grayscale(60%); */
     background-size: cover;
     background-position: center;
@@ -15,7 +15,7 @@
 .heroContant{
     /* padding-left: 10%; */
     position: absolute;
-    right: 17%;
+    left: 17%;
     padding-top: 200px;
 
     .slogan{

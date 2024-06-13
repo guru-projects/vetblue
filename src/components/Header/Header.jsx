@@ -12,7 +12,8 @@ const Header = () => {
 
   const removeActive = (path) => {
     setIsActive(false);
-      navigate(path)
+      navigate(path);
+      window.scrollTo(0, 0);
   }
   
   const navigate = useNavigate();

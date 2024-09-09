@@ -49,6 +49,9 @@ const Products = () => {
   };
   return (
     <div>
+      {/* <div className={Styles.image}>
+          <img src={require('../../assets/PageNotFound.png')} alt="404 png" />
+      </div> */}
       <div className={Styles.products}>
           <div className={Styles.productContent}>
             <p className={Styles.head}>Products</p>

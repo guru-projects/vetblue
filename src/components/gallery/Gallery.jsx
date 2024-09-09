@@ -4,7 +4,10 @@ import chicken from '../../assets/chicken.png';
 const Gallery = () => {
   return (
     <div>
-        <div className={Styles.textContent}>
+      <div className={Styles.image}>
+          <img src={require('../../assets/404.png')} alt="404 png" />
+      </div>
+        {/* <div className={Styles.textContent}>
             <p className={Styles.head}>Gallery</p>
             <p className={Styles.content}>Our top selling product that you may like</p>
         </div>
@@ -21,7 +24,7 @@ const Gallery = () => {
             <img src={chicken} alt="chicken" />
             <img src={chicken} alt="chicken" />
           </div>
-    </div>
+    </div> */}
     </div>
   );
 };

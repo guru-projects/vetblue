@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <div className={HeaderCss.head}>
       <nav className={HeaderCss.navbar} >
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" onClick={() => {navigate('/'); window.scrollTo(0, 0)}} />
         <div className={HeaderCss.listmob}>
             <ul className={`${HeaderCss.list} ${isActive ? HeaderCss.active : ""}`}>
             <li onClick={() => removeActive('/')}>Home</li>

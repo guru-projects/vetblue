@@ -1,22 +1,24 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header/Header';
-import Hero from './components/HeroSection/Hero';
-import Footer from './components/Footer/footer';
-import Description from './components/Description/Description';
-import AboutAndCompany from './components/AboutAndCompany/AboutCompany';
-import Gallery from './components/gallery/Gallery';
-import Products from './components/Products2/Products';
-import Contact from './components/Contact/Contact';
-import Career from './components/Career/Career';
-import About from './components/AboutAndCompany/About';
-import VisionMission from './components/Description/VisionMission';
+import {React, lazy, Suspense} from 'react';
+const Header = lazy(() => import('./components/Header/Header'));
+const Hero = lazy(() => import('./components/HeroSection/Hero'));
+const Footer = lazy(() => import('./components/Footer/footer'));
+const Description = lazy(() => import('./components/Description/Description'));
+const AboutAndCompany = lazy(() => import('./components/AboutAndCompany/AboutCompany'));
+const Gallery = lazy(() => import('./components/gallery/Gallery'));
+const Products = lazy(() => import('./components/Products2/Products'));
+const Contact = lazy(() => import('./components/Contact/Contact'));
+const Career = lazy(() => import('./components/Career/Career'));
+const About = lazy(() => import('./components/AboutAndCompany/About'));
+const VisionMission = lazy(() => import('./components/Description/VisionMission'));
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Header/>
+        <Suspense fallback={"Loading..."}>
         <Routes>
           <Route path="/" element={<><Hero/><Description/><AboutAndCompany/><Gallery/></>} />
           <Route path="/products" element={<Products />} />
@@ -25,6 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/visionmission" element={<VisionMission />} />
         </Routes>
+          </Suspense>
         <Footer/>
       </BrowserRouter>
     </div>

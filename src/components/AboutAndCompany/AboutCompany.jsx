@@ -21,8 +21,7 @@ const AboutCompany = () => {
           <div className={Styles.cardContent}>
               <p className={Styles.head}>About Us</p>
               <p className={Styles.para}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                totam ipsam fugiat, aspernatur ut reiciendis.
+              VETBLUE ANIMAL CARE PRIVATE Ltd., is a Pune based manufacturing unit headed by experienced Veterinarian team who has over twenty-five years of knowledge in the field of poultry industry.
               </p>
               <button className={Styles.button} onClick={() => navigateTo('/about')}>
                 Read More 
@@ -33,8 +32,7 @@ const AboutCompany = () => {
           <div className={Styles.cardContent}>
               <p className={Styles.head}>Company Profile</p>
               <p className={Styles.para}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                totam ipsam fugiat, aspernatur ut reiciendis.
+              We are expertise in third party manufacturing of poultry medicines and feed supplements. We take a unified approach to animal health, building a varied and durable range of products to keep animals healthy. 
               </p>
               <button className={Styles.button} onClick={() => navigateTo('/about')}>
                 Read More

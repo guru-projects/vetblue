@@ -39,7 +39,7 @@
         border: none;
         background-color: #fff;
         font-weight: bold;
-
+        cursor: pointer;
     }
     .button img{
         width: 20px;
@@ -66,6 +66,10 @@
 }
 .animate{
     animation: appear linear; 
+    -moz-animation: appear linear;
+    -webkit-animation: appear linear;
+    -ms-animation: appear linear;
+    -o-animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
 }

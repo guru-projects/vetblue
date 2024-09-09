@@ -23,6 +23,7 @@
     }
     }
 .careerSection button{
+    cursor: pointer;
     padding: 16px 28px;
     font-size: 18px;
     border-radius: 50px;

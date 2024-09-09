@@ -1,7 +1,7 @@
 .hero{
     width: 100vw;
     height: 100vh;
-    background: url(../../assets/bg-4.jpeg) no-repeat center/cover;
+    background: url(../../assets/bg-image.jpg) no-repeat center/cover;
     background-size: cover;
     background-position: left;
     font-family: "Abril Fatface", serif;
@@ -16,7 +16,7 @@
 }
 .heroContant{
     position: absolute;
-    right: 17%;
+    left: 17%;
     padding-top: 200px;
 
     .slogan{

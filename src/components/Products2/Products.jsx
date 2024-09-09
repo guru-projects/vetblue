@@ -1,8 +1,8 @@
 import Styles from './Products.module.css';
-import chicken from '../../assets/chicken.png';
+// import chicken from '../../assets/chicken.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import { useRef } from 'react';
 
 const Products = () => {

@@ -1,5 +1,5 @@
 .head{
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     top: 20px;
     display: flex;
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    border-radius: 24px;
+    border-radius: 10px;
     width: 100%;
     margin: 0 5% 0 5%;
     height: 80px;
@@ -29,17 +29,17 @@
 
 .list{
     width: 500px;
-    height: 60%;
+    height: 50px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     li {
         cursor: pointer;
         align-self: center;
         color: var(--blue);
         padding: 8px 16px;
-        border-radius: 14px;
+        border-radius: 3rem;
 
       &:hover{
         background-color: #E3F4FF;
@@ -47,12 +47,12 @@
     }
     
     li:last-child{
-      color: #fff;
-      background-color: #52baff;
-      /* border-radius: 8; */
+      border: 1px solid #4B9CD3;
+      padding: 8px 22px;
 
       &:hover{
-        background-color: #3098de;
+        color: #fff;
+        background-color: #4B9CD3;
       }
     }
 }
@@ -71,21 +71,15 @@
     }
   
     .bar {
-          border-radius: 10px;
           background-color: #120f0b;
           width: 20px;
-          height: 3px;
+          height: 2.5px;
           display: block;
           margin: 5px;
           -webkit-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out;
       }
 
-  
-    /* adding active class to the bars  */
-    /* .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-    } */
     .hamburger.active .bar:nth-child(1){
       transform: translateY(4px) rotate(45deg);
       width: 20px;
@@ -94,34 +88,34 @@
       transform: translateY(-4px) rotate(-45deg);
     }
     .hamburger.active .bar:nth-child(3){
-      transform: translateY(-12px) rotate(45deg);
+      transform: translateY(-11.5px) rotate(45deg);
     }
-    .lostmob{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
+
     .list{
-        z-index: 1;
+        z-index: -1;
         position: absolute;
         flex-direction: column;
         gap: 0;
-        top: 100px;
-        left: -110%;
+        top: -20px;
+        right: -110%;
         background-color: #fcfcfc;
-        border-radius: 20px;
         width: 80%;
         margin: 0 5%;
-        height: auto;
+        height: 100svh;
         transition: 0.7s ease-in-out;
+        /* padding-top: 200px; */
+        display: flex;
+        justify-content: center;
       }
-    
-      .list.active{
-        left: 0;
-      }
-    
       .list li {
-        margin: 16px 20px 16px 0;
+        margin: 20px;
+        text-align: center;
+        width: 100%;
+      }
+      .list li:last-child {
+        max-width: 200px;
+      }
+      .list.active{
+        right: -30px;
       }
 }

@@ -104,3 +104,8 @@
     font-family: "Poppins", sans-serif;
     margin-bottom: 50px;
 }
+@media (width < 600px) {
+    .content {
+        text-align: justify;
+    }
+}

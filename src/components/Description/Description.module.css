@@ -20,18 +20,26 @@
     img{
         width: 25px;
     }
+    .svg{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
     .head{
+        color: #88c1e7;
         font-size: 1.5em;
         margin: 0;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     .para{
+        font-family: "Poppins", sans-serif;
         margin: 0;
         margin-top: 10px;
-        color: #797979;
+        color: var(--secondary-font);
         font-size: 1em;
     }
     .button{
+        color: #88c1e7;
         margin-top: 20px;
         display: flex;
         align-items: center;
@@ -73,36 +81,61 @@
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
 }
+
+/* Vision Mission */
 .description{
     padding: 120px 10% 10px 10%;
 }
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 .ourPurpose{
-    background-color: #88c1e7;
+    /* background-color: #88c1e7; */
     height: 80px;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding-top: 20px;
+    border-bottom: 3px solid #88c1e7;
 }
-.hint{
-    margin-left: -10px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 3px 12px;
-    width: fit-content;
-    border-radius: 20px;
-    border: 1px solid #d8d8d8;
-    background-color: #d5ebfa;
+.box{
+    text-align: center;
+    flex: 1;
+    padding: 10px 20px;
+    /* border: 1px solid #88c1e7; */
+    border-right: 1px #88c1e7 solid;
+    margin-bottom: 20px;
+    max-width: 500px;
+
+    &:last-child {
+        border-right: none;
+    }
+}
+@media (width < 900px) {
+    .box {
+        border-right: none;
+    }
+}
+
+.png{
+    
 }
 .heading{
     font-size: 2rem;
     margin: 0;
+    color: #88c1e7;
 }
 .content{
+    color: var(--secondary-font);
+    /* text-align: justify; */
     font-family: "Poppins", sans-serif;
     margin-bottom: 50px;
+    font-weight: 400;
+    /* font-size: large; */
 }
 @media (width < 600px) {
     .content {

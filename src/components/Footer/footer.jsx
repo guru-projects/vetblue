@@ -1,22 +1,12 @@
 import Styles from "./footer.module.css";
 import logo from '../../assets/logo.png';
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-    AOS.refresh();
-  }, []);
-
   return (
-    <div data-aos='fade-up' className={Styles.footer}>
+    <div className={Styles.footer}>
       <hr className={Styles.line} />
       <div className={Styles.footerContent}>
         <div className={Styles.footerLogo}>

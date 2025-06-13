@@ -4,7 +4,7 @@
 :root {
   --primary: #4b9cd3;
   --swiper-navigation-color: #292929;
-  --primary-font: #282828;
+  --primary-font: #1f232e;
   --secondary-font: #585858;
 }
 .swiper-button-prev {
@@ -14,16 +14,16 @@
 .swiper-button-next {
   right: -0.1rem !important;
 }
-.swiper-slide {
+/* .swiper-slide {
   width: 400px !important;
   margin: 0;
-}
-@media (width < 700px) {
+} */
+/* @media (width < 700px) {
   .swiper-slide {
     width: 100px !important;
     margin-left: 2px;
   }
-}
+} */
 *::after ::before {
   padding: 0;
   margin: 0;

@@ -17,7 +17,7 @@ const Career = () => {
           ever-curious, caring and daring <br /> come to liberate their growth
           potential — together.
         </p>
-        <button onClick={() => window.location = 'mailto:yourmail@domain.com'}>Upload Resume</button>
+        <button onClick={() => window.location = 'mailto:vetbluehostinger@gmail.com'}>Upload Resume</button>
         <div className={Styles.profiles}>
             <img className={Styles.img1} src={p1} alt="" />
             <img className={Styles.img2} src={p2} alt="" />

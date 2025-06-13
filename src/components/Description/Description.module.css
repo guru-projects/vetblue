@@ -37,8 +37,13 @@
         margin-top: 10px;
         color: var(--secondary-font);
         font-size: 1em;
+        overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
     }
     .button{
+        margin-left: -5px;
         color: #88c1e7;
         margin-top: 20px;
         display: flex;
@@ -46,11 +51,11 @@
         gap: 10px;
         border: none;
         background-color: #fff;
-        font-weight: bold;
+        /* font-weight: bold; */
         cursor: pointer;
     }
     .button img{
-        width: 20px;
+        width: 15px;
     }
     
 }
@@ -58,17 +63,16 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 5px, rgba(0, 0, 0, 0.24) 0px 3px 5px;
 }
 .arrow{
+    color: #88c1e7;
     transition: transform 300ms linear;
 }
 .button:hover .arrow{
     transform: translatex(10px);
 }
-@keyframes appear {
+/* @keyframes appear {
     from{
-        /* opacity: 0; */
         scale: 0.7;
     } to {
-        /* opacity: 1; */
         scale: 1;
     }
 }
@@ -80,7 +84,7 @@
     -o-animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
-}
+} */
 
 /* Vision Mission */
 .description{
@@ -90,7 +94,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
 }
 .ourPurpose{
     /* background-color: #88c1e7; */
@@ -100,24 +103,27 @@
     margin-bottom: 50px;
     /* border-radius: 10px; */
     padding-top: 20px;
-    border-bottom: 3px solid #88c1e7;
+    /* border-bottom: 2px solid #88c1e7; */
 }
 .box{
+    /* border-image: linear-gradient(transparent 10%, #88c1e7 10% 90%, transparent 90%) 0 0 0 1 / 2px; */
     text-align: center;
     flex: 1;
-    padding: 10px 20px;
-    /* border: 1px solid #88c1e7; */
-    border-right: 1px #88c1e7 solid;
-    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #88c1e7;
+    border-radius: 1rem;
+    /* border-right: 1px #88c1e7 solid; */
+    /* margin-bottom: 20px; */
     max-width: 500px;
+    margin: 10px;
 
-    &:last-child {
-        border-right: none;
+    &:first-child{
+        border-image: none;
     }
 }
 @media (width < 900px) {
     .box {
-        border-right: none;
+        border-image: none;
     }
 }
 
@@ -131,11 +137,12 @@
 }
 .content{
     color: var(--secondary-font);
-    /* text-align: justify; */
+    text-align: justify;
     font-family: "Poppins", sans-serif;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     font-weight: 400;
-    /* font-size: large; */
+    font-size: 17.6px;
+    line-height: 21.12px;
 }
 @media (width < 600px) {
     .content {

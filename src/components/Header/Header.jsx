@@ -1,5 +1,5 @@
 import HeaderCss from "./Header.module.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.png";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";

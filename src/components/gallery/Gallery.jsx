@@ -8,6 +8,11 @@ import p5 from '../../assets/products/p5.jpg';
 import p6 from '../../assets/products/p6.jpg';
 import p7 from '../../assets/products/p7.jpg';
 import p8 from '../../assets/products/p8.jpg';
+import p9 from '../../assets/products/p9.jpg';
+import p10 from '../../assets/products/p10.jpg';
+import p11 from '../../assets/products/p11.jpg';
+import p12 from '../../assets/products/p12.jpg';
+
 import arrow from "../../assets/arrow.png";
 import { useNavigate } from "react-router-dom";
 const Gallery = () => {
@@ -25,7 +30,7 @@ const Gallery = () => {
 
   // Memoize gallery images to prevent recreation on every render
   const galleryImages = useMemo(() => [
-    p1, p2, p3, p4, p5, p6, p7, p8
+    p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12
   ], []);
 
   // Create doubled array for infinite scroll

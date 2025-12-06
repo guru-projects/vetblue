@@ -13,8 +13,12 @@ import p5 from '../../assets/products/p5.jpg';
 import p6 from '../../assets/products/p6.jpg';
 import p7 from '../../assets/products/p7.jpg';
 import p8 from '../../assets/products/p8.jpg';
+import p9 from '../../assets/products/p9.jpg';
+import p10 from '../../assets/products/p10.jpg';
+import p11 from '../../assets/products/p11.jpg';
+import p12 from '../../assets/products/p12.jpg';
 
-const imageList = [p1, p2, p3, p4, p5, p6, p7, p8];
+const imageList = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12];
 
 const Products = () => {
   const [fullscreenImage, setFullscreenImage] = useState(null);
